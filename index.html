@@ -7,16 +7,16 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Import Poppins font */
+       
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
         :root {
             font-family: 'Poppins', sans-serif;
         }
 
-        /* Custom utility classes for monochromatic theme */
+        
         .btn-primary {
-            /* Changed to be highly visible over the dark overlay */
+            
             @apply bg-white text-black font-medium px-6 py-3 rounded-xl transition duration-300 hover:bg-gray-200 shadow-xl;
         }
         .text-primary-dark {
@@ -32,26 +32,25 @@
             @apply text-xl font-medium text-gray-700 mb-8;
         }
 
-        /* Ensure smooth scrolling */
+       
         html {
             scroll-behavior: smooth;
         }
 
-        /* New custom style for the Hero background image and overlay */
+       
         .hero-bg {
-            /* --- Hero Image (via CSS background-image) --- */
+           
             background-image: url('background1.jpg');
             background-size: cover;
             background-position: center;
-            /* Flex properties to center the content */
+           
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative; /* Needed for the pseudo-element overlay */
+            position: relative; 
             min-height: 80vh;
         }
 
-        /* Dark overlay for better text readability */
         .hero-bg::before {
             content: '';
             position: absolute;
@@ -59,21 +58,21 @@
             left: 0;
             right: 0;
             bottom: 0;
-            /* Semi-transparent black overlay */
+            
             background: rgba(0, 0, 0, 0.4); 
             z-index: 0;
         }
         
-        /* Ensure content is above the overlay */
+       
         .hero-content {
             position: relative;
             z-index: 10;
             max-width: 6xl;
-            text-align: center; /* Center text inside the content box */
-            padding: 1rem; /* Added padding for smaller screens */
+            text-align: center; 
+            padding: 1rem; 
         }
 
-        /* Adjust text colors for visibility over the dark overlay */
+       
         .hero-content h1, 
         .hero-content p,
         .hero-content .feature-highlight {
@@ -89,13 +88,13 @@
 </head>
 <body class="bg-white text-gray-900 antialiased">
 
-    <!-- Header & Navigation -->
+   
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <nav class="flex justify-between items-center h-20">
                 <a href="#" class="text-2xl font-bold text-primary-dark">Panto</a>
                 
-                <!-- Desktop Navigation Links -->
+               
                 <div class="hidden md:flex space-x-8 font-medium">
                     <a href="#shop" class="text-primary-dark hover:text-gray-700 transition duration-150">Shop</a>
                     <a href="#products" class="text-primary-dark hover:text-gray-700 transition duration-150">Furniture</a>
@@ -103,7 +102,7 @@
                     <a href="#contact" class="text-primary-dark hover:text-gray-700 transition duration-150">Contact</a>
                 </div>
                 
-                <!-- Cart Icon (Placeholder - REPLACED SVG with IMG) -->
+                
                 <div class="flex items-center space-x-4">
                     <button class="p-2 rounded-full text-black hover:bg-gray-100 transition duration-150">
                         <img 
@@ -113,7 +112,7 @@
                             class="w-6 h-6 object-contain"
                         />
                     </button>
-                    <!-- Mobile Menu Button (Hamburger - REPLACED SVG with IMG) -->
+                    
                     <button class="md:hidden p-2 rounded-full text-black hover:bg-gray-100 transition duration-150">
                         <img 
                             src="cart.jpg" 
@@ -128,7 +127,7 @@
     </header>
 
     <main>
-        <!-- 1. Hero Section - Text Centered Over Image with Dark Overlay -->
+        
         <section id="hero" class="hero-bg py-16 sm:py-24 md:py-32">
             <div class="hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="space-y-6">
@@ -142,7 +141,7 @@
                         
                     </a>
                     
-                    <!-- Feature Highlights -->
+                   
                     <div class="pt-8 grid grid-cols-3 gap-4 text-center">
                         <div class="feature-highlight">
                             <span class="text-3xl font-bold border-b-2 border-white pb-1">000</span>
@@ -161,7 +160,7 @@
             </div>
         </section>
 
-        <!-- 2. Why Choosing Us Section -->
+       
         <section id="about" class="py-16 sm:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
@@ -172,7 +171,7 @@
                 </div>
 
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <!-- Feature 1 - REPLACED SVG with IMG -->
+                    
                     <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
                         <div class="text-4xl text-black mb-4">
                             <img 
@@ -184,11 +183,11 @@
                         </div>
                         <h3 class="text-xl font-semibold text-black mb-2">Luxury facilities</h3>
                         <p class="text-primary-light">
-                            Gives you confortable service and all-ground facilities.
+                            ...grees you confortable service and all-ground facilities
                         </p>
                     </div>
 
-                    <!-- Feature 2 - REPLACED SVG with IMG -->
+                   
                     <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
                         <div class="text-4xl text-black mb-4">
                             <img 
@@ -200,15 +199,15 @@
                         </div>
                         <h3 class="text-xl font-semibold text-black mb-2">Affordable Price</h3>
                         <p class="text-primary-light">
-                            Quality at an affordable price, Furniture should always be two things: stylish and within reach.
+                            Quality at an affordable price ondank the facilities that ore Otyle
                         </p>
                     </div>
 
-                    <!-- Feature 3 - REPLACED SVG with IMG -->
+                    
                     <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
                         <div class="text-4xl text-black mb-4">
                             <img 
-                                src="uploaded:m.jpg" 
+                                src="uploaded:choices-icon.png-005" 
                                 onerror="this.onerror=null; this.src='https://placehold.co/40x40/f0f0f0/000?text=📦';" 
                                 alt="Choices Icon" 
                                 class="mx-auto w-10 h-10 object-contain"
@@ -216,14 +215,14 @@
                         </div>
                         <h3 class="text-xl font-semibold text-black mb-2">Many Choices</h3>
                         <p class="text-primary-light">
-                            We've thoughtfully curated a variety of space choices so you can easily select the workspace that perfectly suits your needs.
+                            We plande це зросе choices so that you can choose the workspoon tu your long
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. Best Selling Product Section -->
+       
         <section id="products" class="bg-gray-50 py-16 sm:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
@@ -242,9 +241,9 @@
                     </div>
                 </div>
 
-                <!-- Product Grid -->
+               
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Product 1: Baltsar Chair -->
+                   
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
                         <img 
                             src="chair1.jpeg"
@@ -258,7 +257,7 @@
                             <div class="flex justify-between items-center">
                                 <span class="text-xl font-bold text-black">3920 INR</span>
                                 <button class="p-2 bg-black text-white rounded-full hover:bg-gray-700 transition">
-                                    <!-- Plus Icon - REPLACED SVG with IMG -->
+                                    
                                     <img 
                                         src="uploaded:plus-icon.png-006" 
                                         onerror="this.onerror=null; this.src='https://placehold.co/16x16/000000/ffffff?text=+';" 
@@ -270,7 +269,7 @@
                         </div>
                     </div>
 
-                    <!-- Product 2: Nyantuy Chair -->
+                    
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
                         <img 
                             src="chair 2.jpeg"
@@ -284,7 +283,7 @@
                             <div class="flex justify-between items-center">
                                 <span class="text-xl font-bold text-black">2990 INR</span>
                                 <button class="p-2 bg-black text-white rounded-full hover:bg-gray-700 transition">
-                                    <!-- Plus Icon - REPLACED SVG with IMG -->
+                                   
                                     <img 
                                         src="uploaded:plus-icon.png-006" 
                                         onerror="this.onerror=null; this.src='https://placehold.co/16x16/000000/ffffff?text=+';" 
@@ -296,7 +295,7 @@
                         </div>
                     </div>
                     
-                    <!-- Product 3: Anjay Chair -->
+                   
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
                         <img 
                             src="chair 3.jpg"
@@ -310,7 +309,7 @@
                             <div class="flex justify-between items-center">
                                 <span class="text-xl font-bold text-black">5190 INR</span>
                                 <button class="p-2 bg-black text-white rounded-full hover:bg-gray-700 transition">
-                                    <!-- Plus Icon - REPLACED SVG with IMG -->
+                                   
                                     <img 
                                         src="uploaded:plus-icon.png-006" 
                                         onerror="this.onerror=null; this.src='https://placehold.co/16x16/000000/ffffff?text=+';" 
@@ -322,7 +321,7 @@
                         </div>
                     </div>
                     
-                    <!-- Product 4: Sakarias Armchair -->
+                   
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
                         <img 
                             src="chair 6.jpg"
@@ -336,7 +335,7 @@
                             <div class="flex justify-between items-center">
                                 <span class="text-xl font-bold text-black">9210 INR</span>
                                 <button class="p-2 bg-black text-white rounded-full hover:bg-gray-700 transition">
-                                    <!-- Plus Icon - REPLACED SVG with IMG -->
+                                    
                                     <img 
                                         src="uploaded:plus-icon.png-006" 
                                         onerror="this.onerror=null; this.src='https://placehold.co/16x16/000000/ffffff?text=+';" 
@@ -357,10 +356,10 @@
             </div>
         </section>
 
-        <!-- 4. Materials/Experience Section (Split Content) -->
+       
         <section class="py-16 sm:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Left Side: Materials Content -->
+                
                 <div class="space-y-6">
                     <h2 class="text-3xl font-bold text-black">Very Serious Materials For Making Furniture</h2>
                     <p class="text-primary-light max-w-xl">
@@ -382,7 +381,7 @@
                     </a>
                 </div>
 
-                <!-- Right Side: Experience Image -->
+               
                 <div class="aspect-video rounded-3xl overflow-hidden shadow-2xl">
                     <img
                         src="MAT.jpg"
@@ -395,7 +394,7 @@
         </section>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Testimonial Card 1 -->
+                    
                     <div class="p-8 bg-white rounded-3xl shadow-xl transition duration-300 hover:shadow-2xl">
                         <div class="flex items-center mb-6 space-x-4">
                             <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center text-xl font-semibold text-yellow-700">
@@ -413,7 +412,7 @@
                         </p>
                     </div>
 
-                    <!-- Testimonial Card 2 -->
+                   
                     <div class="p-8 bg-white rounded-3xl shadow-xl transition duration-300 hover:shadow-2xl">
                         <div class="flex items-center mb-6 space-x-4">
                             <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-xl font-semibold text-blue-700">
@@ -431,7 +430,7 @@
                         </p>
                     </div>
 
-                    <!-- Testimonial Card 3 -->
+                   
                     <div class="p-8 bg-white rounded-3xl shadow-xl transition duration-300 hover:shadow-2xl">
                         <div class="flex items-center mb-6 space-x-4">
                             <div class="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center text-xl font-semibold text-pink-700">
@@ -452,14 +451,14 @@
             </div>
         </section>
 
-    <!-- Footer -->
+   
     <footer id="contact" class="bg-black text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <!-- Removed SVG Demo block -->
+         
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <!-- Col 1: Logo & Mission -->
+                
                 <div class="col-span-2 md:col-span-1">
                     <h3 class="text-3xl font-bold mb-4">Panto</h3>
                     <p class="text-gray-400 text-sm">
@@ -467,7 +466,7 @@
                     </p>
                 </div>
 
-                <!-- Col 2: Services -->
+               
                 <div>
                     <h4 class="font-semibold text-lg mb-4 border-b border-gray-700 pb-2">Services</h4>
                     <ul class="space-y-2 text-sm text-gray-400">
@@ -477,7 +476,6 @@
                     </ul>
                 </div>
 
-                <!-- Col 3: Company -->
                 <div>
                     <h4 class="font-semibold text-lg mb-4 border-b border-gray-700 pb-2">Company</h4>
                     <ul class="space-y-2 text-sm text-gray-400">
@@ -487,7 +485,7 @@
                     </ul>
                 </div>
 
-                <!-- Col 4: More Info -->
+                
                 <div>
                     <h4 class="font-semibold text-lg mb-4 border-b border-gray-700 pb-2">Explore</h4>
                     <ul class="space-y-2 text-sm text-gray-400">
